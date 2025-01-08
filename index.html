@@ -2,13 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/src/assets/images/indian-frog.png"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <meta property="og:title" content="인디안 개구리" />
+    <!-- 카드에 표시하고 싶은 제목 -->
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/K97LKHm/indianfrog.jpg"
+    />
+
+    <!-- 카드에 표시하고 싶은 이미지 -->
+    <meta property="og:url" content="https://indianfrog.com/" />
+    <!-- 표시하고싶은 url주소 -->
+    <meta
+      property="og:description"
+      content="🐸 안녕하세요. Indian Frog 개발팀입니다. 🐸
+      🃏 Indian Frog는 웹 환경에서 유저간 1대 1 인디언 포커 게임을 제공하는 서비스입니다."
+    />
+    <!-- 카드에 표시하고 싶은 설명 -->
+    <title>인디안 개구리</title>
   </head>
   <body>
     <div id="root"></div>
     <div id="modal-root"></div>
+    <script>
+      window.global = window;
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
